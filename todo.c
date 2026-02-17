@@ -84,6 +84,12 @@ int main(int argc, char* argv[]){
 			return 1;
 		}
 
+	} else if (!strcmp(argv[1], "-d")){ // delete list
+		if (argc != 3) {
+			printf("Wrong number of arguments for -d argument\n");
+			return 1;
+		}
+
 	} else{
 		printf("argument %s unknown.\n",argv[1]);
 		return 1;
